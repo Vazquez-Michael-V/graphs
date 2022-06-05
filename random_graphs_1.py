@@ -18,9 +18,10 @@ zip_r = list(zip(r1,r2))
 print(zip_r)
 print(len(zip_r))
 
-graph_verticies = len(zip_r)
 
 G.add_edges_from(zip_r)
+graph_verticies = G.number_of_nodes()
+
 nx.draw(G, with_labels=True)
 
 
